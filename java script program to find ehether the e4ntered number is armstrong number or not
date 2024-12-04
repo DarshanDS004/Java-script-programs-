@@ -1,0 +1,23 @@
+<html>
+  <head>
+    <title>Armstrong Number</title>
+  </head>
+  <body>
+    <script>
+      var number = prompt("Enter a number");
+      var numDigits = number.length;  // Get the number of digits
+      var sum = 0;
+      
+      for (var i = 0; i < numDigits; i++) {
+        sum += Math.pow(Number(number.charAt(i)), numDigits); // Use charAt and Math.pow
+      }
+
+      if (sum == number) {
+        alert("The entered number is an Armstrong number.");
+      } else {
+        alert("The entered number is not an Armstrong number.");
+      }
+    </script>
+  </body>
+</html>
+
